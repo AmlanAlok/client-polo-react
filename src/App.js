@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'   // to use bootstrap in react app
 
 function App() {
   return (
