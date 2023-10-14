@@ -1,0 +1,82 @@
+
+STEP 1: -------------------------------------------------------------------------------
+
+amlanalok@Amlans-MacBook-Pro ~ % node --version
+v18.17.1
+amlanalok@Amlans-MacBook-Pro ~ % npm --version
+9.6.7
+
+STEP 2: -------------------------------------------------------------------------------
+
+Last login: Sat Oct 14 00:06:13 on ttys003
+amlanalok@Amlans-MacBook-Pro 96-client-polo % npx create-react-app client-polo-react
+
+Creating a new React app in /Users/amlanalok/Documents/Programming/96-client-polo/client-polo-react.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1460 packages in 48s
+
+242 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+
+added 69 packages, and changed 1 package in 9s
+
+246 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1529 packages in 3s
+
+246 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created client-polo-react at /Users/amlanalok/Documents/Programming/96-client-polo/client-polo-react
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd client-polo-react
+  npm start
+
+You had a `README.md` file, we renamed it to `README.old.md`
+
+Happy hacking!
+npm notice 
+npm notice New major version of npm available! 9.6.7 -> 10.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.2.0
+npm notice Run npm install -g npm@10.2.0 to update!
+npm notice 
+amlanalok@Amlans-MacBook-Pro 96-client-polo % 
+
+STEP 3: -------------------------------------------------------------------------------
+
+
+
+
+
