@@ -96,4 +96,8 @@ npm i react-router-dom
 
 STEP 7: -------------------------------------------------------------------------------
 
+Followed this youtube video
+
+https://www.youtube.com/watch?v=4LZKnegAm4g&list=PLB0ozhyre8fc11v6oAPmPFmM_Ux9oigat&index=101
+
 STEP 8: -------------------------------------------------------------------------------

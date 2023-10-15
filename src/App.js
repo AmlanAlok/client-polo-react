@@ -1,14 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'   // to use bootstrap in react app
 import Navbar from './layout/Navbar';
 import Home from './pages/Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AddStudent from './students/AddStudent';
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Home/>
+      <Router>
+        <Navbar/>
+        
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/addstudent" element={<AddStudent/>} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 }
