@@ -29,7 +29,7 @@ export default function EditStudent() {
     navigate('/')
   }
 
-  const loadStudent  = async (e) => {
+  const loadStudent  = async () => {
     const result = await axios.get(`http://localhost:8080/student/getById/${id}`)
     setStudent(result.data)
   }

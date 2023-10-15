@@ -17,6 +17,11 @@ export default function Home() {
         setStudents(result.data)
     }
 
+    const deleteStudents = async (id) => {
+        await axios.delete(`http://localhost:8080/student/${id}`)
+        loadStudents()
+    }
+
     return (
         <div className='container'>
             <div className='py-4'>
@@ -41,7 +46,7 @@ export default function Home() {
                                     <td>
                                         <button className="btn btn-primary mx-2">View</button>
                                         <Link className="btn btn-outline-primary mx-2" to={`/editstudent/${student.id}`}>Edit</Link>
-                                        <button className="btn btn-danger mx-2">Delete</button>
+                                        <button className="btn btn-danger mx-2" onClick = {() => deleteStudents(student.id)}>Delete</button>
                                     </td>
                                 </tr>
                             ))
