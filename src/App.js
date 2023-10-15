@@ -4,6 +4,7 @@ import Navbar from './layout/Navbar';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AddStudent from './students/AddStudent';
+import EditStudent from './students/EditStudent';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/addstudent" element={<AddStudent/>} />
+          <Route exact path="/editstudent/:id" element={<EditStudent/>} />
         </Routes>
       </Router>
       
