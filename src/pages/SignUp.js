@@ -64,6 +64,12 @@ export default function SignUp() {
             <form>
                 <label htmlFor="username">
                     Username:
+                    <span className={validName ? 'valid' : 'hide'}>
+                        <FontAwesomeIcon icon={faCheck} />
+                    </span>
+                    <span className={validName || !user ? 'hide' : 'invalid'}>
+                        <FontAwesomeIcon icon={faTimes} />
+                    </span>
                 </label>
                 <input type="text"
                     id='username'       // should match htmlFor in the label
@@ -76,6 +82,17 @@ export default function SignUp() {
                     onFocus={() => setUserFocus(true)}
                     onBlur={() => setUserFocus(false)}
                 />
+
+                {/* This will display only if:
+                1. username is on focus
+                2. user state is not empty
+                3. username validity is false */}
+                <p id='uidnote' className={userFocus && user && !validName ? 'instructions' : 'offscreen'}>
+                    <FontAwesomeIcon icon={faInfoCircle} />
+                    4 to 24 characters. <br />
+                    Must begin with a letter <br />
+                    Letters, numbers, underscores, hypens allowed.
+                </p>
             </form>
         </div>
     )
